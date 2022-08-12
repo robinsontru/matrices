@@ -8,7 +8,7 @@ def cuenta_de_banco (nombre_cuenta):
         for i in range (Ncuenta):
             os.system("cls")
             nombre=input("nombre de usuario")
-            
+            id=input("ingrese un id")
             consignar_corrinte=input("consignar en cuenta corriente")
             write.writerows([nombre,id,consignar_corrinte])
              # consignar_cuenta_de_ahorro=input("consignar en una cuenta de ahorro")
@@ -27,5 +27,5 @@ def main():
     archivo="cuentas.csv"
     cuenta_de_banco(archivo)
     recupar_cuenta(archivo)
-if __name__=="__main__":
+if  __name__=="__main__":
     main()
